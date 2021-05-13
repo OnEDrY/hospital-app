@@ -323,7 +323,7 @@ router.get("/add", async (req, res) => {
                     </div>
                     <div class="mb-3">
                         <label for="admission" class="form-label">Дата поступления</label>
-                        <input name="admission" type="text" class="form-control showhide" value="${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}">
+                        <input name="admission" type="text" class="form-control showhide" value="${moment(new Date()).format("LLL")}">
                     </div>
                     <div class="buttons-group">
                         <a href="/" class="btn gray" style="margin-right: 5px">Назад</a>

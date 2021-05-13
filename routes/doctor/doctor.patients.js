@@ -323,7 +323,7 @@ router.get("/add", async (req, res) => {
                     </div>
                     <div class="mb-3">
                         <label for="admission" class="form-label">Дата поступления</label>
-                        <input name="admission" type="text" class="form-control showhide" value="${moment(new Date()).format("YYYY-MM-DD HH:mm:ss")}">
+                        <input name="admission" type="text" class="form-control showhide" value="${moment(new Date()).format("DD.MM.YYYY HH:mm:ss")}">
                     </div>
                     <div class="buttons-group">
                         <a href="/" class="btn gray" style="margin-right: 5px">Назад</a>

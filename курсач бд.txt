@@ -1,0 +1,42 @@
+
+CREATE TABLE `hospitalbd`.`patients`
+(
+    `patientid` INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+    `userid` INT NOT NULL,
+    `fullname` TEXT NOT NULL, 
+    `doctorid` INT NOT NULL, 
+    `diagnosis` VARCHAR(1024) DEFAULT 'Диагноз не установлен', 
+    `birthday` DATE,
+    `admission` DATETIME DEFAULT CURRENT_TIMESTAMP,
+    `discharge` DATETIME
+)
+ENGINE = InnoDB;
+
+CREATE TABLE `hospitalbd`.`doctors`
+(
+    `doctorid` INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+    `userid` INT NOT NULL,
+    `fullname` TEXT NOT NULL,
+    `desk` TEXT
+)
+ENGINE = InnoDB;
+
+CREATE TABLE `hospitalbd`.`therapies`
+(
+    `therapyid` INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+    `patientid` INT NOT NULL,
+    `doctorid` TEXT NOT NULL,
+    `desk` TEXT
+)
+ENGINE = InnoDB;
+
+CREATE TABLE `hospitalbd`.`tests`
+(
+    `testid` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `testname` VARCHAR(1024) DEFAULT 'Анализ крови',
+    `patientid` INT NOT NULL,
+    `doctorid` TEXT NOT NULL,
+    `datetime` DATETIME DEFAULT CURRENT_TIMESTAMP,
+    `desk` TEXT
+)
+ENGINE = InnoDB;

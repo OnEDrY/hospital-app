@@ -1,0 +1,303 @@
+
+header {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-box-shadow: 0px 8px 17px -8px rgba(0,0,0,0.71);
+  -moz-box-shadow: 0px 8px 17px -8px rgba(0,0,0,0.71);
+  box-shadow: 0px 8px 17px -8px rgba(0,0,0,0.71);
+}
+
+.header-content {
+  width: 70%;
+}
+
+.menu {
+  float: left;
+  display: flex;
+  flex-direction: row;
+}
+
+.full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  min-height: auto !important;
+}
+
+.auth {
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+
+.auth-item {
+  margin-right: 10px;
+}
+
+.menu-item {
+  margin-right: 10px;
+}
+
+.logo {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clickable:hover {
+  text-decoration: underline;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.body-wrapper {
+  min-height: 100vh;
+}
+
+.body {
+  width: 400px;
+}
+
+.form-check {
+  margin-top: 10px;
+}
+
+.flights {
+  height: 55vh;
+}
+
+.flight {
+  padding: 1%;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: row;
+}
+
+.flight-from {
+  margin-left: 10%;
+  word-wrap: break-word;
+  width: 20vw;
+}
+
+.flight-to {
+  word-wrap: break-word;
+  width: 20vw;
+}
+
+.flight-datetime {
+  word-wrap: break-word;
+  width: 40vw;
+}
+
+.gray {
+  background-color: rgb(194, 194, 194);
+}
+
+.form-topic {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.error-topic {
+  font-size: 21px;
+  text-align: center;
+}
+
+.message-topic {
+  font-size: 21px;
+  text-align: center;
+}
+
+
+
+
+
+.main-form-wrapper {
+  margin-top: 100px;
+  margin-left: 15%;
+}
+
+.main-form-topic {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.account-form {
+  width: 400px;
+}
+
+
+.a-button {
+  margin-right: 10px;
+}
+
+.buttons-group {
+  margin-top: 33px;
+}
+
+.admin-user-list {
+  margin-left: 15vw;
+  margin-top: 20px;
+}
+
+.admin-user {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+}
+
+.admin-user-sel {
+  width: 12vw;
+  margin-right: 18px;
+  margin-top: 12px;
+  word-wrap: break-word;
+}
+
+.admin-topic {
+  margin-top: 100px;
+  margin-left: 15vw;
+  font-size: 28px;
+}
+
+.users-table {
+  margin-top: 25px;
+  margin-left: 15%;
+}
+
+.users-table th {
+  min-width: 10vw;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+th.sorted[data-order="1"],
+th.sorted[data-order="-1"] {
+    position: relative;
+}
+
+th.sorted[data-order="1"]::after,
+th.sorted[data-order="-1"]::after {
+    right: 8px;
+    position: absolute;
+}
+
+th.sorted[data-order="-1"]::after {
+	content: "▼"
+}
+
+th.sorted[data-order="1"]::after {
+	content: "▲"
+}
+
+.disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -user-select: none;
+}
+
+.hide {
+  opacity: 0;
+  transition: .2s;
+}
+
+.fullhide {
+  display: none;
+}
+
+.showhide:hover + .hide {
+    opacity: 1;
+}
+
+.showhide:hover + .fullhide {
+  display: block;
+}
+
+.admin-panel-button {
+  color: black;
+  background-color: lightblue;
+  font-size: 1.4em;
+  padding: 14px 22px;
+  text-decoration: none;
+  transition: .4s;
+  margin-right: 10px;
+}
+
+.admin-panel-button:hover {
+  color: rgb(0, 0, 0);
+  -webkit-box-shadow: 0px 12px 13px -5px rgba(135, 133, 255, 0.2);
+-moz-box-shadow: 0px 12px 13px -5px rgba(135, 133, 255, 0.2);
+box-shadow: 0px 12px 13px -5px rgba(135, 133, 255, 0.2);
+}
+
+.page-margin {
+  margin-top: 120px;
+  margin-left: 15%;
+}
+
+.admin-panel {
+  word-wrap: break-word;
+}
+
+.admin-log-items {
+  margin-left: 15%;
+}
+
+.log-item {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.log-item-id {
+  width: 50px;
+  margin: 0 5px;
+}
+
+.log-item-userid {
+  width: 50px;
+  margin: 0 5px;
+}
+
+.log-item-date {
+  width: 30vw;
+  word-wrap: break-word;
+}
+
+.log-item-action {
+  width: 30vw;
+  margin: 0 5px;
+  word-wrap: break-word;
+}
+
+.page {
+  color: gray;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.page:hover {
+  color: black;
+}
+
+.page-selector {
+  font-size: 140%;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  text-align: center;
+}

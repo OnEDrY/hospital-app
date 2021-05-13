@@ -137,7 +137,7 @@ router.post("/add", async (req, res) => {
             await Patient.create(patient);
         } catch (err) { console.log(err); return res.send(err); }
 
-        return res.send(`${user.name}\n${user.password}`);
+        return res.send(renderError("Данные зарегестрированного пациента", `Логин - ${user.name}<br>Пароль - ${user.password}`, req));
     }
 
     let rows = await sql.query("SELECT * FROM patients WHERE userid = ?", patient.userid);
